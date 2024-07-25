@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍🎓</text></svg>" />
+    <title>
+      {% block title %}
+        Student Performance
+      {% endblock %}
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    {% block head %}
+
+    {% endblock %}
+  </head>
+  <body class="flex flex-col h-screen bg-gray-100 pt-2">
+    <nav class="bg-green-600 p-4 px-6 rounded-lg shadow-lg mx-auto max-w-4xl">
+      <div class="flex justify-between items-center gap-10">
+        <a href="/" class="text-white text-xl font-bold">Student Performance</a>
+        <div class="space-x-4">
+          <a href="/" class="text-white hover:text-gray-200">Home</a>
+          <a href="/predict" class="text-white hover:text-gray-200">Predict</a>
+          <a href="/understand_data" class="text-white hover:text-gray-200">Understand Data</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex-1 container mx-auto mt-8 flex items-center">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>

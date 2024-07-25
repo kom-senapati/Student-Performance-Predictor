@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Understand Data{% endblock %}
+
+{% block content %}
+<div class="bg-white p-8 rounded shadow-md w-full max-w-4xl mx-auto">
+    <h1 class="text-2xl mb-6 text-center">About the Dataset</h1>
+    <p class="mb-4">The Student Performance Dataset is designed to examine the factors influencing academic student performance. The dataset consists of 10,000 student records, with each record containing information about various predictors and a performance index.</p>
+    <h2 class="text-xl mb-2">Variables:</h2>
+    <ul class="list-disc list-inside">
+        <li><strong>Hours Studied:</strong> The total number of hours spent studying by each student.</li>
+        <li><strong>Previous Scores:</strong> The scores obtained by students in previous tests.</li>
+        <li><strong>Extracurricular Activities:</strong> Whether the student participates in extracurricular activities (Yes or No).</li>
+        <li><strong>Sleep Hours:</strong> The average number of hours of sleep the student had per day.</li>
+        <li><strong>Sample Question Papers Practiced:</strong> The number of sample question papers the student practiced.</li>
+    </ul>
+    <h2 class="text-xl mt-4 mb-2">Target Variable:</h2>
+    <p><strong>Performance Index:</strong> A measure of the overall performance of each student. The performance index represents the student's academic performance and has been rounded to the nearest integer. The index ranges from 10 to 100, with higher values indicating better performance.</p>
+    <p>The dataset aims to provide insights into the relationship between the predictor variables and the performance index. Researchers and data analysts can use this dataset to explore the impact of studying hours, previous scores, extracurricular activities, sleep hours, and sample question papers on student performance.</p>
+    <div class="flex justify-center mt-6">
+        <a href="https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression" target="_blank" class="px-6 py-2 bg-green-500 text-white rounded-md">View on Kaggle</a>
+    </div>
+</div>
+{% endblock %}
