@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+Codes-Programs-Database/.venv/
+
+.git
+
+*.gitignore
+*.env
+*.DS_Store
